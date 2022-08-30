@@ -4,7 +4,7 @@ on:
     branches: [main]
 
 jobs:
-  configsdk:
+  upload:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
         run: make ci_test
 
       - name: SDK Run
-        run: python -m config_sdk_content
+        run: python -m panther_content
 
       - name: SDK Upload
         run: python script/sdkupload.py
