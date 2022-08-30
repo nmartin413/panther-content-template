@@ -1,13 +1,11 @@
 name: main
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   configsdk:
     runs-on: ubuntu-latest
-    needs: [classic]
     steps:
       - uses: actions/checkout@v3
 
