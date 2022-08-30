@@ -30,7 +30,7 @@ for key in vulnerable_ports:
     )
 
 
-# install a Panther provided detection
+# install a Panther provided detection with optional overrides
 import panther_okta as okta
 
 okta.rules.api_key_created(

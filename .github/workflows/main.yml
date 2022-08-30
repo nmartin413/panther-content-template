@@ -33,5 +33,5 @@ jobs:
       - name: SDK Upload
         run: python script/sdkupload.py
         env:
-          API_TOKEN: ${{ secrets.API_TOKEN_SNOWFLAKE_STAGING }}
-          API_ENDPOINT: https://api.snowflake.staging.runpanther.xyz/public/graphql
+          API_TOKEN: ${{ secrets.PANTHER_API_TOKEN }}
+          API_ENDPOINT: ${{ secrets.PANTHER_API_URL }}
